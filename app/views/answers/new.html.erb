@@ -1,0 +1,28 @@
+<div class='well span10'>
+
+  <%= form_for @answer do |f| %>
+  <%= f.label :word, "Defined Word:" %>
+  <%= f.text_field :word %>
+  <%= f.label :layman_definition, "Layman Definition:" %>
+
+  <%= f.cktext_area :layman_definition, 
+        :ckeditor => {:toolbar => "MyToolbar"}, :id=> 'answer[layman_definition]' %>
+
+  <%= f.label :example, "Simple Example:" %>
+  <%= f.cktext_area :example, 
+        :ckeditor => {:toolbar => "MyToolbar"} %>
+
+  <%= f.label :good_bad, "Overall Opinion:" %>
+  <%= f.cktext_area :good_bad, 
+        :ckeditor => {:toolbar => "MyToolbar"} %>  
+
+  <br>
+  <%= f.submit %>
+  <% end %>
+
+
+</div>
+
+<!-- t.text     "layman_definition"
+    t.text     "example"
+    t.text     "good_bad" -->

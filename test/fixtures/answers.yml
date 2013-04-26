@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user: 
+  word: MyString
+  layman_definition: MyText
+  example: MyText
+  good_bad: MyText
+
+two:
+  user: 
+  word: MyString
+  layman_definition: MyText
+  example: MyText
+  good_bad: MyText
